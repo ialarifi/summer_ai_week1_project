@@ -16,3 +16,9 @@ def manageAccountMenu():
     print("4. View all my messages")
     print("5. <- Go back ")
     return input("Please Choose a number: ")
+
+def AccountMenu():
+    Username= input("Username: ")
+    Email= input("email: ")
+    Password= input("password: ")
+    return Username,Email,Password

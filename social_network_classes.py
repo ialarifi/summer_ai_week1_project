@@ -17,14 +17,17 @@ class SocialNetwork:
         # hint: load a the json file from disk and look up how to recreate the list of people objects.
         pass
 
-    def  create_account(self):
+    def  create_account(self,uname,email,pasw):
         #implement function that creates account here
         print("Creating ...")
-        pass
+        person1 = Person(uname,email,pasw)
+        self.list_of_people.append(person1)
+
+        
 
 
 class Person:
-    def __init__(self, name, age):
+    def __init__(self, name, email, password):
         self.id = name
         self.year = age
         self.friendlist = []
@@ -33,6 +36,6 @@ class Person:
         #implement adding friend. Hint add to self.friendlist
         pass
 
-    def send_message(self):
+    def send_message(self, message, name_of_friend, social_network):
         #implement sending message to friend here
         pass

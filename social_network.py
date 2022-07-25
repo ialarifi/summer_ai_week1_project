@@ -35,7 +35,8 @@ if __name__ == "__main__":
     while True: 
         if choice == "1":
             print("\nYou are now in the create account menu")
-            ai_social_network.create_account()
+            Username,Email,Password = social_network_ui.AccountMenu()
+            ai_social_network.create_account(Username,Email,Password)
 
         elif choice == "2":
             inner_menu_choice = social_network_ui.manageAccountMenu()
@@ -55,7 +56,3 @@ if __name__ == "__main__":
         
         #restart menu
         choice = social_network_ui.mainMenu()
-
-
-
-        
